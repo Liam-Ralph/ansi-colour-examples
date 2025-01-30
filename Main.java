@@ -14,6 +14,9 @@ class JavaColorExample{
             if(i < 10){
                 System.out.print(" ");
             }
+            if(i < 100){
+                System.out.print(" ");
+            }
         }
         System.out.println("\u001b[0m");
 

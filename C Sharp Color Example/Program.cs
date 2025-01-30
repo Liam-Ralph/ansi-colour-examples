@@ -11,10 +11,7 @@
         
         // First Sixteen Colors
         for(int i = 0; i < 16; i++){
-            Console.Write("\u001b[" + positionControl + ";5;" + i + "m " + i + " ");
-            if(i < 10){
-                Console.Write(" ");
-            }
+            Console.Write(string.Format("\u001b[{0};5;{1}m{2} ", positionControl, i, i.ToString().PadLeft(4)));
         }
         Console.WriteLine("\u001b[0m");
 
@@ -22,10 +19,7 @@
         for(int i = 16; i < 256; i++){
 
             // Print the color, extra space if needed
-            Console.Write("\u001b[" + positionControl + ";5;" + i + "m " + i + " ");
-            if(i < 100){
-                Console.Write(" ");
-            }
+            Console.Write(string.Format("\u001b[{0};5;{1}m{2} ", positionControl, i, i.ToString().PadLeft(4)));
 
             // New line every 36 colors, adjust for the first 16
             if((i - 15) % 36 == 0){

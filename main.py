@@ -7,19 +7,15 @@ if not color_background:
 
 # First Sixteen Colors
 for i in range(16):
-    print("\u001b[" + position_control + ";5;" + str(i) + "m " + str(i) + " ", end = "")
-    if i < 10:
-        print(" ", end = "")
+    print(f"\u001b[{position_control};5;{i}m{str(i).rjust(4)} ", end = "")
 
 print("\u001b[0m")
 
 # Remaining Colors
 for i in range(16, 256):
 
-    # Print the color, extra space if needed
-    print("\u001b[" + position_control + ";5;" + str(i) + "m " + str(i) + " ", end = "")
-    if i < 100:
-        print(" ", end = "")
+    # Print the color
+    print(f"\u001b[{position_control};5;{i}m{str(i).rjust(4)} ", end = "")
 
     # New line every 36 colors, adjust for the first 16
     if (i - 15) % 36 == 0:
