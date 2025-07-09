@@ -1,10 +1,10 @@
-# ANSI Color Examples
+# ANSI Colour Examples
 ### Released December 2024
 
 <br/>
 
 ## Description
-Shows all 256 ANSI colors, which are usefull for adding colored text and backgrounds
+Shows all 256 ANSI colours, which are usefull for adding coloured text and backgrounds
 to console projects. Includes identical versions in C#, Python, and Java. Information
 on ANSI escape codes can be found here (not my website):
 https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html.
